@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 /**
- * Driver class that tests provided code. Unittests should provide full code coverage, but you may edit the driver
+ * Driver class that tests provided code. Unit tests should provide full code coverage, but you may edit the driver
  * to better understand how the code works.
  * 
  * @author Stephen

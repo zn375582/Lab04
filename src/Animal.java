@@ -148,7 +148,6 @@ public class Animal
         
         return sameColor && sameName && sameWeight && sameHeight;
         
-        
         /* return TODO; */
     }
 }
