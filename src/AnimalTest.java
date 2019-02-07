@@ -1,7 +1,7 @@
 /**
  * Testing class for Product object
  *
- * @author Stephen Thung, references previous code from Dr.Fagg, Taner Davis
+ * @author Nicole Zimmerer, references previous code from Dr.Fagg, Taner Davis
  * @version 2018-08-25
  */
 public class AnimalTest
