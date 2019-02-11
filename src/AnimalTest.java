@@ -23,5 +23,50 @@ public class AnimalTest
     }
 
     // TODO: test full constructor, getters, and toString
+    
+    public void fullConstructorTest(String color, String name, double weight, double height) throws AssertException
+    {
+    	Animal ani = new Animal("Purple", "Perry", 50.0, 4.0);
+    	
+    	Assert.assertEquals("Purple", ani.getColor());
+    	Assert.assertEquals("Perry", ani.getName());
+    	Assert.assertEquals(50.0, ani.getWeight(), 0.01);
+    	Assert.assertEquals(4.0, ani.getHeight(), 0.01);
+    	
+    }
+    
+    public void gettersTest() throws AssertException
+    {
+    	Animal dolphin = new Animal("Blue", "Bobby", 100.0, 30.0);
+    	String expectedColor = "Blue";
+    	String actualColor = dolphin.getColor();
+    	Assert.assertEquals(expectedColor, actualColor);
+    	
+    	//Assert.assertTrue(dolphin.getColor().equals(”Blue”));
+    	
+    	String expectedName = "Bobby";
+    	String actualName = dolphin.getName();
+    	Assert.assertEquals(expectedName, actualName);
+    	
+    	//Assert.assertTrue(dolphin.getName().equals(”Bobby”));
+    	
+    	double expectedWeight = 100.0;
+    	double actualWeight = dolphin.getWeight();
+    	Assert.assertEquals(expectedWeight, actualWeight, 0.01);
+    	
+    	double expectedHeight = 30.0;
+    	double actualHeight = dolphin.getHeight();
+    	Assert.assertEquals(expectedHeight, actualHeight, 0.01);
+    	
+    }
+    
+    public void toStringTest() throws AssertException
+    {
+    	Animal cat = new Animal("Black", "Midnight", 25.0, 20.0);
+    	String expected = "Midnight, a Black-colored animal. 25.0 pounds, 20.0 inches\n";
+    	String actual = cat.toString();
+    	Assert.assertEquals(expected, actual);
+    }
+    
 }
 
