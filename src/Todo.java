@@ -10,6 +10,8 @@ Tasks:
 3. Test full Animal constructor
 4. Test getters (Animal class)
 5. Test toString() method in Animal class
+6. Create Equipment Test
+7. Create and finish Zoo test
 
 
 Estimated Time (minutes):
@@ -18,11 +20,15 @@ Estimated Time (minutes):
 3. 15
 4. 15
 5. 10
+6. 30
+7. 45
 
 Actual Time (minutes):
 1. 5
 2. 5
-3.
-4. 
-5. 
+3. 5
+4. 20
+5. 10
+6. 45
+7. 45
 */}
