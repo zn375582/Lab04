@@ -5,7 +5,7 @@ import java.io.IOException;
  * to better understand how the code works.
  * 
  * @author Stephen
- * @version 2018-09-10
+ * @version 2019-02-11
  */
 public class Driver
 {
@@ -27,14 +27,16 @@ public class Driver
        System.out.println(zoo);
        
        // Create a utility belt and print out its info:
-	   UtilityBelt team = new UtilityBelt("InputOfficial.csv");
+	   UtilityBelt team = new UtilityBelt("Input.csv");
        
        team.writeEquipment("EquipmentInfo.txt");
        team.writeStatistics("EquipmentStats.txt");
        
-       UtilityBelt team2 = new UtilityBelt("InputOfficial.csv");
+       UtilityBelt team2 = new UtilityBelt("Input.csv");
        
        team2.writeEquipment("EquipmentInfo.txt");
        team2.writeStatistics("EquipmentStats.txt");
+       
+       
    }
 }

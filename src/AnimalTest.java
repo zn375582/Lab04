@@ -43,13 +43,9 @@ public class AnimalTest
     	String actualColor = dolphin.getColor();
     	Assert.assertEquals(expectedColor, actualColor);
     	
-    	//Assert.assertTrue(dolphin.getColor().equals(”Blue”));
-    	
     	String expectedName = "Bobby";
     	String actualName = dolphin.getName();
     	Assert.assertEquals(expectedName, actualName);
-    	
-    	//Assert.assertTrue(dolphin.getName().equals(”Bobby”));
     	
     	double expectedWeight = 100.0;
     	double actualWeight = dolphin.getWeight();
@@ -59,6 +55,12 @@ public class AnimalTest
     	double actualHeight = dolphin.getHeight();
     	Assert.assertEquals(expectedHeight, actualHeight, 0.01);
     	
+    	//test another animal 
+    	Animal cat = new Animal("Black", "Midnight", 25.0, 20.0);
+    	Assert.assertEquals("Black", cat.getColor());
+    	Assert.assertEquals("Midnight", cat.getName());
+    	Assert.assertEquals(25.0, cat.getWeight(), 0.01);
+    	Assert.assertEquals(20.0, cat.getHeight(), 0.01);
     	
  
     }

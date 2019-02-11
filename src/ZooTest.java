@@ -23,7 +23,7 @@ public class ZooTest
 	    double actualHeight = dallas.getTotalHeight();
 	    Assert.assertEquals(expectedHeight, actualHeight, .1);
 	    
-	    //test after adding another animal
+	    //test after adding another animal within .1 margin for accuracy
 	    Animal d = new Animal("Purple", "Sassy", 220.0, 30.0);
 	    dallas.addAnimal(d);
 	    Assert.assertEquals(131.1, dallas.getTotalHeight(), .1);
